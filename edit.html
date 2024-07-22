@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sửa Sản Phẩm</title>
+
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto p-6">
+        <h1 class="text-2xl font-bold mb-4">Sửa Sản Phẩm</h1>
+        <form id="editProductForm" class="bg-white p-6 rounded shadow">
+            <input type="hidden" id="productId">
+            <div class="mb-4">
+                <label for="title" class="block text-sm font-medium text-gray-700">Tên sản phẩm</label>
+                <input type="text" id="title" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </div>
+            <div class="mb-4">
+                <label for="price" class="block text-sm font-medium text-gray-700">Giá sản phẩm</label>
+                <input type="number" id="price" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </div>
+            <div class="mb-4">
+                <label for="images" class="block text-sm font-medium text-gray-700">URL ảnh</label>
+                <input type="text" id="images" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </div>
+            <div class="mb-4">
+                <label for="description" class="block text-sm font-medium text-gray-700">Mô tả sản phẩm</label>
+                <textarea id="description" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Cập nhật</button>
+            <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"><a href="index.html"> << Quay Lại Danh Sách</a>
+        </form>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/edit.js" defer></script>
+</body>
+</html>
